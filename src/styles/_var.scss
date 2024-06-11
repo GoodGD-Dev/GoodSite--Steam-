@@ -2,16 +2,39 @@
 $color1: #000;
 
 // Formats
-.title {
+.title--big {
   font-size: 30px;
+}
+
+.title {
+  font-size: 25px;
 }
 
 .title--small {
   font-size: 18px;
 }
 
-.title--texto {
-  font-size: 10px;
+.texto {
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 600px) {
+  .title--big {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+  
+  .title--small {
+    font-size: 12px;
+  }
+  
+  .texto {
+    font-size: 9px;
+    text-align: center;
+  }
 }
 
 * {

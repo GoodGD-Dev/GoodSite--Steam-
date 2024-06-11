@@ -1,13 +1,20 @@
 @use 'var';
 @use 'header';
 @use 'feed';
+@use 'sidebar';
 
 body {
   background-image: url(https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1263950/33efa73e582993f87e544d4774e53424ddcb14fe.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 li {
   list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-position: center;
+  }
 }
