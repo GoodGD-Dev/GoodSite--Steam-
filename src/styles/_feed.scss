@@ -6,11 +6,24 @@
 
   &__feed {
     width: 74.5%;
-    &__item {
-      background-color: white;
-      border: solid 2px #000;
-      margin-bottom: 5px;
 
+    &__item {
+      display: flex;
+      background-color: var.$feed;
+      border: solid 2px var.$border;
+      margin-bottom: 5px;
+      &__image {
+        padding: 10;
+        figure {
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          border: 2px dotted var.$border;
+        }
+      }
       &__title {
         margin: 10 10;
       }

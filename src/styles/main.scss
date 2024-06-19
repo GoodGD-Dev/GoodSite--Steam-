@@ -4,13 +4,18 @@
 @use 'sidebar';
 
 body {
-  background-image: url(https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1263950/33efa73e582993f87e544d4774e53424ddcb14fe.jpg);
+  background-image: url(../../assets/images/c59ad2bd4ad2fbacd04017debc679ddb.gif);
   background-size: cover;
   background-repeat: repeat;
 }
 
 li {
   list-style: none;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: var.$link;
 }
 
 @media only screen and (max-width: 600px) {

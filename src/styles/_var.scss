@@ -1,36 +1,67 @@
 // Paleta de Cores
-$color1: #000;
+$color0: #00ff37;
+$color1: #fff;
+$color2: #3b3a3a;
+$color3: #000000;
+$color4: #52D3D8;
+
+
+
+$title0: $color0;
+$title1: $color0;
+$title2: $color0;
+$link: $color0;
+$hover: $color1;
+$text: $color0;
+$border: $color0;
+$background: $color2;
+$header: $color3;
+$feed: $color3;
+$sidebar: $color3;
+
+
+
 
 // Formats
-.title--big {
-  font-size: 30px;
-}
-
 .title {
   font-size: 25px;
+  color: $title1;
+  &--big {
+    font-size: 30px;
+    color: $title0;
+  }
+  &--small {
+    font-size: 18px;
+    color: $title2;
+  }
+  &--nav {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
 }
 
-.title--small {
-  font-size: 18px;
-}
+
 
 .texto {
   font-size: 13px;
+  color: $text;
 }
 
 @media only screen and (max-width: 600px) {
-  .title--big {
-    font-size: 20px;
-  }
-
   .title {
     font-size: 16px;
+    &--big {
+      font-size: 20px;
+    }
+    &--small {
+      font-size: 12px;
+    }
+    &--nav {
+      font-size: 12px;
+    }
   }
-  
-  .title--small {
-    font-size: 12px;
-  }
-  
   .texto {
     font-size: 9px;
     text-align: center;

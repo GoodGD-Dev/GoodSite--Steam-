@@ -4,25 +4,20 @@
   &__sidebar {
     width: 25%;
     &__menu {
-      background-color: white;
-      border: solid 2px #000;
+      background-color: var.$sidebar;
+      border: solid 2px var.$border;
       width: 100%;
-  
       &__item {
         margin: 15 10;
         padding: 6 10;
-        border: dotted 2px #000;
-        a {
-          color: #000;
-          &:hover {
-            color: red;
-          }
+        border: dotted 2px var.$border;
+        &:hover {
+          background-color: var.$color0;
+          transition: background-color 0.3s ease-in-out;
+          color: var.$hover;
         }
       }
     }
-  }
-  a {
-    text-decoration: none;
   }
 }
 
